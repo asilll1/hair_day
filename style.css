@@ -41,7 +41,7 @@ header {
 }
 
 .promo-banner {
-    background-image: url('backg.jpeg');
+    background-image: url('images/backg.jpeg');
     background-size: cover;
     background-position: center;
     color: #f3f3f3;
