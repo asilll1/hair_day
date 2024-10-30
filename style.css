@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #f3f3f3;
+    background-color: #1c1c1e;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #29292d;
+}
+
+.logo {
+    height: 60px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffccbb;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff8c75;
+}
+
+.promo-banner {
+    background-image: url('backg.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 3px solid #ff8c75;
+}
+
+.promo-banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.promo-banner p {
+    font-size: 1.2em;
+}
+
+.content-columns {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #2e2e32;
+    gap: 20px;
+}
+
+article {
+    width: 30%;
+    background-color: #3a3a3e;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+article h2 {
+    color: #ff8c75;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 0.9em;
+    color: #d4d4d4;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #29292d;
+    border-top: 3px solid #ff8c75;
+}
+
+.footer-logo-img {
+    height: 40px;
+    filter: brightness(0.9);
+}
+
+.footer-info {
+    font-size: 0.8em;
+    color: #a9a9a9;
+}
+
+button, .promo-banner a {
+    background-color: #ff8c75;
+    color: #1c1c1e;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .promo-banner a:hover {
+    background-color: #ff6150;
+    color: #f3f3f3;
+}
+
+.promo-banner h1, .promo-banner p, .content-columns article {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
